@@ -87,4 +87,4 @@ production:
   <<: *default
   database: blockdesa_production
   username: blockdesa
-  password: <%= ENV["BLOCKDESA_DATABASE_PASSWORD"] %>
+  password: <%= ENV["DATABASE_URL"] %>
