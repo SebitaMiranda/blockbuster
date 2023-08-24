@@ -49,7 +49,7 @@ class ClientsController < ApplicationController
 
   # DELETE /clients/1 or /clients/1.json
   def destroy
-    @client.movies.update_all(cliente_id: nil)
+    @client.movies.update_all(client_id: nil)
     @client.destroy
 
     respond_to do |format|
